@@ -19,21 +19,33 @@ redirect_from:
 
 ### Description
 
-npm gets its config settings from the command line, environment variables, and `npmrc` files.
-
-The `npm config` command can be used to update and edit the contents of the user and global npmrc files.
-
-For a list of available configuration options, see [config](/cli/v10/using-npm/config).
+* ways that npm gets its config settings
+    ** CL,
+    ** environment variables,
+    ** `npmrc` files
+* `npmrc` files
+    ** types
+        *** user
+        *** global
+    ** `npm config`
+        *** allows
+            **** update  the contents
+            **** edit the contents
+        *** see [config](/cli/v10/using-npm/config)
 
 ### Files
 
-The four relevant files are:
+* relevant `npmrc` files
+    ** `/path/to/my/project/.npmrc`
+        *** per-project
+    ** `~/.npmrc`
+        *** per-user
+    ** `$PREFIX/etc/npmrc`
+        *** global
+    ** `/path/to/npm/npmrc`
+        *** npm builtin
 
-- per-project config file (`/path/to/my/project/.npmrc`)
-- per-user config file (`~/.npmrc`)
-- global config file (`$PREFIX/etc/npmrc`)
-- npm builtin config file (`/path/to/npm/npmrc`)
-
+* TODO:
 All npm config files are an ini-formatted list of `key = value` parameters. Environment variables can be replaced using `${VARIABLE_NAME}`. For example:
 
 ```bash
