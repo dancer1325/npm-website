@@ -1,6 +1,6 @@
 # npm Documentation
 
-* [documentation](content)
+* [documentation](content/nav.yml)
 
 ## How to run
 
